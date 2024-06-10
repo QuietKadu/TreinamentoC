@@ -42,7 +42,7 @@ int main() {
 			scanf("%f", &cs);
 			printf("Digite a concentracao do poluente que corresponde ao C(a concentracao do poluente que corresponde ao IInf): ");
 			scanf("%f", &ci);
-			printf("Digite aconcentracao medida para o poluente em questao: ");
+			printf("Digite a concentracao medida para o poluente em questao: ");
 			scanf("%f", &c);
 			iqar = (is - in) / (cs - ci) * (c - ci) + in;
 			if (iqar <= 50 ) {
@@ -75,14 +75,13 @@ int main() {
 			}
 			printf("Deseja continuar? [S/N]: ");
 			scanf("%s", &opc);
-		break;
+		}
 		case 2:
 			printf("\nO indice de qualidade do ar nos permite entender os niveis de poluicao atmosferica concentrada em ambientes internos e  externos e as propriedades que tornam o ar improprio e ofensivo a saude e ao meio ambiente. Nosso projeto concente em   criar um programa que calcule a qualidade do ar em todos os lugares.\n");
 		break;
 		case 3:
 			printf("\nPrograma finalizado\n");
-		break;		
-		}	
+		break;			
 	}
 
 	return 0;
