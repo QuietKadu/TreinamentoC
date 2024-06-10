@@ -6,11 +6,22 @@
 int main() {
 	float is, in, cs, ci, c, iqar;
 	char opc = 'S';
+	int senh, confirm;
 	printf("================================= \n");
 	printf("MONITORAMENTO DE QUALIDADE DE AR \n");
 	printf("================================= \n");
 	printf("Ola seja bem vindo!! \n \n");
+	while (confirm != senh) {
+		printf("Digite sua senha: ");
+		scanf("%d", &senh);
+		printf("Confirme sua senha: ");
+		scanf("%d", &confirm);
+		if (confirm != senh) {
+			printf("\nSenha incorreta, insira novamente\n\n");
+		}	
+	}
 	while (opc == 'S' || opc == 's') {
+		printf("\nSenha correta! \n");
 		printf("\nDigite o ISup(valor critico superior do indice): ");
 		scanf("%f", &is);
 		printf("Digite o IInf(valor critico inferior do indice): ");
@@ -53,6 +64,6 @@ int main() {
 		printf("Deseja continuar? [S/N]: ");
 		scanf("%s", &opc);		
 	}
-	
+	 
 	return 0;
 }
