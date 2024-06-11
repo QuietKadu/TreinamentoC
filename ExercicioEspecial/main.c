@@ -31,7 +31,7 @@ int main() {
 			printf("\nOpcao incorreta, digite novamente\n");
 		}
 	}
-	switch (menu){
+	switch (menu) {
 		case 1:
 			while (opc == 'S' || opc == 's') {
 				printf("\nDigite o ISup(valor critico superior do indice): ");
@@ -55,7 +55,7 @@ int main() {
 				}
 				else if (iqar >= 101 && iqar <= 199) {
 					printf("\nA qualidade do ar esta no nivel [INADEQUADA] \n");
-					printf("[ALERTA!!! RISCO MEDIANO MESMO ASSIM FIQUE ATENTO \n \n");
+					printf("[ALERTA!!! RISCO MEDIANO MESMO ASSIM FIQUE ATENTO] \n \n");
 					printf("Descricao: Toda a populacao pode apresentar sintomas como tosse seca, cansaço, ardor nos olhos, nariz e garganta. Pessoas de grupos sensiveis (criancas, idosos e pessoas com doencas respiratorias e cardiacas), podem apresentar efeitos mais serios na saude. \n \n");
 				}
 				else if (iqar >= 200 && iqar <= 299) {
@@ -81,9 +81,10 @@ int main() {
 			printf("\nO indice de qualidade do ar nos permite entender os niveis de poluicao atmosferica concentrada em ambientes internos e  externos e as propriedades que tornam o ar improprio e ofensivo a saude e ao meio ambiente. Nosso projeto concente em   criar um programa que calcule a qualidade do ar em todos os lugares.\n");
 		break;
 		case 3:
-			printf("\nPrograma finalizado\n");
 		break;			
 	}
+	
+	printf("\nPrograma finalizado");
 
 	return 0;
 }
