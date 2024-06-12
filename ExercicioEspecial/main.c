@@ -6,17 +6,18 @@
 int main() {
 	float is, in, cs, ci, c, iqar;
 	char opc = 'S';
-	int senh, confirm, menu;
+	char senh[1000], confirm[1000];
+	int menu;
 	printf("================================= \n");
 	printf("MONITORAMENTO DE QUALIDADE DE AR \n");
 	printf("================================= \n");
 	printf("Ola seja bem vindo!! \n \n");
-	while (confirm != senh) {
+	while (strcmp(senh, confirm) != 0) {
 		printf("Digite sua senha: ");
-		scanf("%d", &senh);
+		scanf("%s", &senh);
 		printf("Confirme sua senha: ");
-		scanf("%d", &confirm);
-		if (confirm != senh) {
+		scanf("%s", &confirm);
+		if (strcmp(senh, confirm) != 0) {
 			printf("\nSenha incorreta, insira novamente\n\n");
 		}	
 	}
