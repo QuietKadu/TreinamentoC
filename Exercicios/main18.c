@@ -19,9 +19,9 @@ int main()
             rep ++;
         }
     }
-    printf("Media maior ou igual a 7: %d", ap);
-    printf("\nMedia entre 5 e 6: %d", re);
-    printf("\nMedia menor que 5: %d", rep);
+    printf("Aprovados: %d", ap);
+    printf("\nRecuperacao: %d", re);
+    printf("\nReprovados: %d", rep);
 
     return 0;
 }
