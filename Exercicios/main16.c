@@ -2,7 +2,7 @@
 
 int main()
 {
-    int id, contD = 1, contV = 1, contT = 1, contA = 1;
+    int id, contD = 1, contV = 0, contT = 0, contA = 0;
     float pes, pesD = 0, pesV = 0, pesT = 0, pesA = 0;
     for (int quant = 0; quant < 5; quant++) {
         printf("Digite uma idade: ");
